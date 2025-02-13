@@ -1,10 +1,12 @@
 package tn.esprit.gestionzoo.classes;
 
-public class Animal {
-    private String family;
-    private String name;
-    private int age;
-    private boolean isMammal;
+abstract public class Animal {
+
+
+    protected String family;
+    protected String name;
+    protected int age;
+    protected boolean isMammal;
 
     void setAge(int age){
         if(age > 0){
@@ -17,6 +19,8 @@ public class Animal {
     String  getName(){
         return name;
     }
+
+    abstract boolean is_mammal();
 
     Animal()
     {
