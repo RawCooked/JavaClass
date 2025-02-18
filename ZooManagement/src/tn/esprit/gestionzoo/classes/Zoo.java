@@ -7,6 +7,8 @@ public class Zoo {
     private final int nbrCages=25;
     private int compteurAnimal ;
 
+    private Animal[] aquaticAnimals;
+
     public Zoo() {
         compteurAnimal=0;
         this.animals = new Animal[nbrCages];
