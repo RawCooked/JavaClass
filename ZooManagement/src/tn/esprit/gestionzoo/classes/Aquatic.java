@@ -14,4 +14,8 @@ public class Aquatic extends Animal{
         this.habitat=habitat;
         System.out.println("Aquatic constructor");
     }
+    @Override
+    public String toString() {
+        return family + " " + name + " " + age + " " + isMammal + " " + habitat;
+    }
 }

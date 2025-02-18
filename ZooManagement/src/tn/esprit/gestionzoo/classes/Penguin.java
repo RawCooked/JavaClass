@@ -11,4 +11,8 @@ public class Penguin extends Aquatic{
          this.swimmingDepth=swimmingDepth;
          System.out.println("Penguin constructor");
      }
+    @Override
+    public String toString() {
+        return family + " " + name + " " + age + " " + isMammal + " " + habitat + " " + swimmingDepth;
+    }
 }

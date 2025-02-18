@@ -14,4 +14,8 @@ public class Dolphin extends Aquatic{
         this.swimmingSpeed=swimmingSpeed;
         System.out.println("Dolphin constructor");
     }
+    @Override
+    public String toString() {
+        return family + name + " " + age + " " + isMammal + " " + habitat + " " + swimmingSpeed;
+    }
 }

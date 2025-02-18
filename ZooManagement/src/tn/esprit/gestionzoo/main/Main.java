@@ -1,45 +1,49 @@
 package tn.esprit.gestionzoo.main;
+
 import tn.esprit.gestionzoo.classes.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        Animal animal = new Animal("ammar","aziz",21,true);
+        Animal animal = new Animal("John", "Smith", 40, true);
         Aquatic aquatic = new Aquatic(
-                "ammar",
-                "aziz",
-                21,
+                "Emily",
+                "Davis",
+                35,
                 true,
                 "Esprit"
-
         );
         Dolphin dolphin = new Dolphin(
-                "abd",
-                "Maher",
-                23,
+                "Michael",
+                "Brown",
+                38,
                 false,
-                "ESPRIT",
+                "Esprit",
                 3.3f
         );
         Penguin penguin = new Penguin(
-                "nsitla9abbou",
-                "taher",
-                21,
+                "Sarah",
+                "Johnson",
+                42,
                 false,
-                "espritEtudiant",
+                "Esprit",
                 3.5f
-
         );
         Terrestrial terrestrial = new Terrestrial(
-                "ABC",
-                "heni",
-                23,
+                "David",
+                "Wilson",
+                45,
                 false,
                 233
         );
         Zoo zoo = new Zoo();
-
-
+        System.out.println("----------------------------------------");
+        System.out.println(aquatic);
+        System.out.println("----------------------------------------");
+        System.out.println(dolphin);
+        System.out.println("----------------------------------------");
+        System.out.println(terrestrial);
+        System.out.println("----------------------------------------");
 
     }
 }

@@ -14,4 +14,9 @@ public class Terrestrial extends Animal{
         System.out.println("Terrestrial constructor");
 
     }
+    @Override
+    public String toString() {
+        return "Family : " + family + "Name : " +name +"Age : " + age +
+                " Is Mammal " + isMammal + "Nbr Legs : " + nbrLegs;
+    }
 }
