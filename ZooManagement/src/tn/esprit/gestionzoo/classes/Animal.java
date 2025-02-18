@@ -1,6 +1,5 @@
 package tn.esprit.gestionzoo.classes;
-
-abstract public class Animal {
+ public class Animal {
 
 
     protected String family;
@@ -20,7 +19,6 @@ abstract public class Animal {
         return name;
     }
 
-    abstract boolean is_mammal();
 
     Animal()
     {
