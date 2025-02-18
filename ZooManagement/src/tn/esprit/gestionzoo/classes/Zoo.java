@@ -1,5 +1,7 @@
 package tn.esprit.gestionzoo.classes;
 
+import java.awt.print.Paper;
+
 public class Zoo {
     private Animal[] animals;
     private String name;
@@ -17,16 +19,27 @@ public class Zoo {
         System.out.println("Zoo constructor");
         this.aquaticAnimals = new Animal[10];
     }
-    public void addAquaticAnimal(Aquatic aquatic){
-        if( aquatic.equals(new Aquatic())  && nbAquaticAnimals < 10 ){
-            aquaticAnimals[nbAquaticAnimals]=aquatic;
+    public void addAquaticAnimal(Animal aquatic) {
+        if (aquatic instanceof Aquatic && nbAquaticAnimals < 10) {
+            aquaticAnimals[nbAquaticAnimals] = (Aquatic) aquatic;
             nbAquaticAnimals++;
         }
     }
+    public void displayNumberOfAquaticsByType(){
+        int nbD=0,nbP=0;
+        for (int i=0; i<nbAquaticAnimals;i++){
+            if ( aquaticAnimals[i] instanceof Dolphin ) nbD++;
+            else if ( aquaticAnimals[i] instanceof Penguin) nbP++;
+        }
+        System.out.println("nb Dolfins: "+nbD+" | nb Penguis: "+nbP);
+    }
+    public float maxPenguinSwimmingDepth(){
+        
+    }
 
     public void displayAquaticAnimals(){
-        for ( Animal aquatic : aquaticAnimals  ){
-            aquatic.swim();
+        for (int i=0; i<nbAquaticAnimals;i++){
+            System.out.println(aquaticAnimals[i]);
         }
     }
 

@@ -55,10 +55,12 @@ public class Main {
         //on remarque que le penguin possede la methode de sa classe mére
 
         zoo.addAquaticAnimal(aquatic);
-        zoo.addAquaticAnimal(aquatic);
-        zoo.addAquaticAnimal(aquatic);
+        zoo.addAquaticAnimal(dolphin);
+        zoo.addAquaticAnimal(penguin);
 
         zoo.displayAquaticAnimals();
+        zoo.displayNumberOfAquaticsByType();
+        System.out.println(Zoo.nbAquaticAnimals);
 
     }
 }
