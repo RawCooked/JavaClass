@@ -29,7 +29,7 @@ This repository contains all my Java projects, assignments, and exercises from m
 ## 🛠️ Technologies Used
 - **Java** ☕ (of course!)
 - **Git & GitHub** 🐙 (for version control)
-- **IDE:** IntelliJ IDEA / VS Code / Eclipse (whichever works best for you!)
+- **IDE:** IntelliJ IDEA 
 
 ---
 
