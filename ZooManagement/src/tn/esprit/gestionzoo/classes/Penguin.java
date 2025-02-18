@@ -1,7 +1,7 @@
 package tn.esprit.gestionzoo.classes;
 
 public class Penguin extends Aquatic{
-    private float swimmingDepth;
+    float swimmingDepth;
 
      public Penguin(){
          System.out.println("Penguin constructor");

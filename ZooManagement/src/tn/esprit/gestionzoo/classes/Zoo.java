@@ -33,8 +33,18 @@ public class Zoo {
         }
         System.out.println("nb Dolfins: "+nbD+" | nb Penguis: "+nbP);
     }
-    public float maxPenguinSwimmingDepth(){
-        
+    public float maxPenguinSwimmingDepth() {
+        float max = 0f;
+
+        for (int i = 0; i < nbAquaticAnimals; i++) {
+            if (aquaticAnimals[i] instanceof Penguin) {
+                float depth = ((Penguin) aquaticAnimals[i]).swimmingDepth;
+                if (depth > max) {
+                    max = depth;
+                }
+            }
+        }
+        return max;
     }
 
     public void displayAquaticAnimals(){
