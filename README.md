@@ -11,15 +11,15 @@ This repository contains all my Java projects, assignments, and exercises from m
 ### **📂 Repository Structure**
 ```
 📦 Java-Course-Repo
- ┣ 📂 Week-1
- ┃ ┣ 📜 HelloWorld.java
- ┃ ┣ 📜 VariablesAndDataTypes.java
- ┣ 📂 Week-2
- ┃ ┣ 📜 ConditionalsAndLoops.java
- ┃ ┣ 📜 FunctionsAndMethods.java
- ┣ 📂 Projects
- ┃ ┣ 📜 MiniProject1.java
- ┃ ┣ 📜 MiniProject2.java
+ ┣ 📂 Commit name ex: exercice 3
+ ┃ ┣ 📜 file.java
+ ┃ ┣ 📜 otherFile.java
+ ┣ 📂 Commit
+ ┃ ┣ 📜 OtherFile.java
+ ┃ ┣ 📜 otherFIle.java
+ ┣ 📂 Commit
+ ┃ ┣ 📜 OtherFile.java
+ ┃ ┣ 📜 otherfile.java
  ┣ 📜 README.md
  ┣ 📜 .gitignore
 ```
@@ -56,9 +56,7 @@ This repository contains all my Java projects, assignments, and exercises from m
 ---
 
 ## 📝 To-Do List
-- [ ] Complete Week 3 exercises
-- [ ] Work on the final project
-- [ ] Write better documentation
+
 
 ---
 
