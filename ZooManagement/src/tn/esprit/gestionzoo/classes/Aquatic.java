@@ -14,6 +14,9 @@ public class Aquatic extends Animal{
         this.habitat=habitat;
         System.out.println("Aquatic constructor");
     }
+    public void swim(){
+        System.out.println("This aquatic animal is swimming.");
+    }
     @Override
     public String toString() {
         return family + " " + name + " " + age + " " + isMammal + " " + habitat;

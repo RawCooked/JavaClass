@@ -18,4 +18,8 @@ public class Dolphin extends Aquatic{
     public String toString() {
         return family + name + " " + age + " " + isMammal + " " + habitat + " " + swimmingSpeed;
     }
+    public void swim(){
+        System.out.println("This dolphin is swimming.");
+    }
 }
+
