@@ -37,22 +37,28 @@ public class Main {
                 233
         );
         Zoo zoo = new Zoo();
-        System.out.println("-------------Aquatic animal-----------------");
-        System.out.println(aquatic);
-        System.out.println("-------------Penguin-----------------");
-        System.out.println(penguin);
-        System.out.println("-------------Dolphin-------------");
-        System.out.println(dolphin);
-        System.out.println("---------------Terrestrial-----------------");
-        System.out.println(terrestrial);
-        System.out.println("-------------aquatic Swimming-------------------");
-        aquatic.swim();
-        System.out.println("----------------dolphin Swimming-----------------");
-        dolphin.swim();
-        System.out.println("-----------------penguin Swimming--------------");
-        System.out.println("------------------end-------------------");
+//        System.out.println("-------------Aquatic animal-----------------");
+//        System.out.println(aquatic);
+//        System.out.println("-------------Penguin-----------------");
+//        System.out.println(penguin);
+//        System.out.println("-------------Dolphin-------------");
+//        System.out.println(dolphin);
+//        System.out.println("---------------Terrestrial-----------------");
+//        System.out.println(terrestrial);
+//        System.out.println("-------------aquatic Swimming-------------------");
+//        aquatic.swim();
+//        System.out.println("----------------dolphin Swimming-----------------");
+//        dolphin.swim();
+//        System.out.println("-----------------penguin Swimming--------------");
+//        System.out.println("------------------end-------------------");
 
         //on remarque que le penguin possede la methode de sa classe mére
+
+        zoo.addAquaticAnimal(aquatic);
+        zoo.addAquaticAnimal(aquatic);
+        zoo.addAquaticAnimal(aquatic);
+
+        zoo.displayAquaticAnimals();
 
     }
 }

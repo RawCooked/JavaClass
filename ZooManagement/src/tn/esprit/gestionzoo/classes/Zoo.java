@@ -8,11 +8,26 @@ public class Zoo {
     private int compteurAnimal ;
 
     private Animal[] aquaticAnimals;
+    public static int nbAquaticAnimals;
 
     public Zoo() {
         compteurAnimal=0;
+        nbAquaticAnimals=0;
         this.animals = new Animal[nbrCages];
         System.out.println("Zoo constructor");
+        this.aquaticAnimals = new Animal[10];
+    }
+    public void addAquaticAnimal(Aquatic aquatic){
+        if( aquatic.equals(new Aquatic())  && nbAquaticAnimals < 10 ){
+            aquaticAnimals[nbAquaticAnimals]=aquatic;
+            nbAquaticAnimals++;
+        }
+    }
+
+    public void displayAquaticAnimals(){
+        for ( Animal aquatic : aquaticAnimals  ){
+            aquatic.swim();
+        }
     }
 
     void setName(String name) {
