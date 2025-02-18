@@ -20,9 +20,9 @@ package tn.esprit.gestionzoo.classes;
     }
 
 
-    Animal()
+    public Animal()
     {
-
+        System.out.println("Animal constructor");
     }
     public Animal(String family,String name,int age,boolean isMammal)
     {

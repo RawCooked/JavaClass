@@ -10,6 +10,7 @@ public class Zoo {
     public Zoo() {
         compteurAnimal=0;
         this.animals = new Animal[nbrCages];
+        System.out.println("Zoo constructor");
     }
 
     void setName(String name) {
