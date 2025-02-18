@@ -11,7 +11,7 @@ package tn.esprit.gestionzoo.classes;
         if(age > 0){
         this.age = age;
         return;
-    }
+        }
         System.out.println("age under 0, is it in conception ?");
     }
 
@@ -22,13 +22,14 @@ package tn.esprit.gestionzoo.classes;
 
     public Animal()
     {
+
         System.out.println("Animal constructor");
     }
     public Animal(String family,String name,int age,boolean isMammal)
     {
         this.family=family;
         this.name=name;
-        this.age=age;
+        setAge(age);
         this.isMammal=isMammal;
     }
     public void displayAnimal()
