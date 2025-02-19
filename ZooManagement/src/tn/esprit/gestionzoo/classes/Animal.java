@@ -43,5 +43,6 @@ package tn.esprit.gestionzoo.classes;
         return "Family : " + family + "Name : " +name +"Age : " + age +
                 " Is Mammal : " + isMammal;
     }
-}
+
+ }
 

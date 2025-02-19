@@ -56,5 +56,6 @@ public class Main {
         zoo.displayNumberOfAquaticsByType();
         System.out.println(Zoo.nbAquaticAnimals);
 
+
     }
 }
