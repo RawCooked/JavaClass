@@ -6,13 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Animal animal = new Animal("John", "Smith", 40, true);
-        Aquatic aquatic = new Aquatic(
-                "Emily",
-                "Davis",
-                35,
-                true,
-                "Esprit"
-        );
+
         Dolphin dolphin = new Dolphin(
                 "Michael",
                 "Brown",
@@ -54,7 +48,7 @@ public class Main {
 
         //on remarque que le penguin possede la methode de sa classe mére
 
-        zoo.addAquaticAnimal(aquatic);
+
         zoo.addAquaticAnimal(dolphin);
         zoo.addAquaticAnimal(penguin);
 

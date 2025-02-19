@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.classes;
 
-public class Aquatic extends Animal{
+public abstract class Aquatic extends Animal{
 
     protected String habitat;
 
@@ -15,9 +15,7 @@ public class Aquatic extends Animal{
         System.out.println("Aquatic constructor");
     }
 
-    public void swim(){
-        System.out.println("This aquatic animal is swimming.");
-    }
+    abstract public void swim();
     @Override
     public String toString() {
         return family + " " + name + " " + age + " " + isMammal + " " + habitat;

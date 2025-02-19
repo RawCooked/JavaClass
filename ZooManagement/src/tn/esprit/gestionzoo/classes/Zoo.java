@@ -50,6 +50,11 @@ public class Zoo {
     public void displayAquaticAnimals(){
         for (int i=0; i<nbAquaticAnimals;i++){
             System.out.println(aquaticAnimals[i]);
+            if (aquaticAnimals[i] instanceof Penguin ) {
+                ((Penguin) aquaticAnimals[i]).swim();
+            }else if (aquaticAnimals[i] instanceof Dolphin) {
+                ((Dolphin) aquaticAnimals[i]).swim();
+            }
         }
     }
 
