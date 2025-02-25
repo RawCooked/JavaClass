@@ -25,6 +25,13 @@ public class Zoo {
             nbAquaticAnimals++;
         }
     }
+    //correction
+    public void addAquaticAnimal(Aquatic aquatic){
+        if(nbAquaticAnimals < this.nbrCages){
+            aquaticAnimals[nbAquaticAnimals] = aquatic;
+            nbAquaticAnimals++;
+        }
+    }
     public void displayNumberOfAquaticsByType(){
         int nbD=0,nbP=0;
         for (int i=0; i<nbAquaticAnimals;i++){
@@ -34,11 +41,11 @@ public class Zoo {
         System.out.println("nb Dolfins: "+nbD+" | nb Penguis: "+nbP);
     }
     public float maxPenguinSwimmingDepth() {
-        float max = 0f;
+        float max = -1;
 
         for (int i = 0; i < nbAquaticAnimals; i++) {
             if (aquaticAnimals[i] instanceof Penguin) {
-                float depth = ((Penguin) aquaticAnimals[i]).swimmingDepth;
+                float depth = ((Penguin) aquaticAnimals[i]).getSwimmingDepth();
                 if (depth > max) {
                     max = depth;
                 }
@@ -56,6 +63,7 @@ public class Zoo {
                 ((Dolphin) aquaticAnimals[i]).swim();
             }
         }
+        System.out.println("");
     }
 
     void setName(String name) {

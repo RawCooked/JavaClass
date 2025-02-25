@@ -1,6 +1,8 @@
 package tn.esprit.gestionzoo.classes;
 
-public  class Aquatic extends Animal{
+import java.util.Objects;
+
+public class Aquatic extends Animal{
 
     protected String habitat;
 
@@ -25,12 +27,10 @@ public  class Aquatic extends Animal{
 
     @Override
     public boolean equals(Object obj){
-        if(obj instanceof Aquatic){
-            Aquatic aquatic=(Aquatic)obj;
-            if( this.name == aquatic.name && this.age == aquatic.age && this.habitat == aquatic.habitat ){
-                return true;
-            }
-            return false;
+        if(obj instanceof Aquatic aquatic){
+            return Objects.equals(this.name, aquatic.name) &&
+                    this.age == aquatic.age &&
+                    Objects.equals(this.habitat, aquatic.habitat);
         }
         return false;
     }
